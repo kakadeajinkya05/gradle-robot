@@ -14,9 +14,8 @@
  *  limitations under the License.
  */
 
-package org.roboscratch.gradle
+package org.robotrun.gradle
 
-import com.google.common.reflect.ClassPath
 import org.gradle.api.Project
 import org.gradle.testfixtures.ProjectBuilder
 import org.junit.Test

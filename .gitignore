@@ -7,3 +7,6 @@ gradlew.bat
 libnative-*
 examples/**/.gradle
 robot-indices
+.gradle/
+build/
+gradle.properties

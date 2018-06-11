@@ -19,15 +19,17 @@ plugins {
     id 'groovy'
     id 'java'
     id 'maven'
-    id "com.gradle.plugin-publish" version "0.9.4"
+    id "com.gradle.plugin-publish" version "0.9.10"
 }
 
 repositories {
     mavenLocal()
-    maven {}
+    maven {
+        url "https://plugins.gradle.org/m2/"
+    }
 }
 
-group = 'org.roboscratch.gradle'
+group = 'org.robotrun.gradle'
 version = '0.1.3'
 
 tasks.withType(GroovyCompile) {
@@ -46,14 +48,14 @@ dependencies {
 }
 
 pluginBundle {
-    website = 'https://github.com/cthiele42/gradle-robot/wiki'
-    vcsUrl = 'https://github.com/cthiele42/gradle-robot'
+    website = 'https://github.com/kakadeajinkya05/gradle-robot/wiki'
+    vcsUrl = 'https://github.com/kakadeajinkya05/gradle-robot'
     description = 'Gradle Plugin for the Robot Framework'
     tags = ['test', 'acceptance', 'robotframework']
 
     plugins {
         gradleRobotPlugin {
-            id = 'org.roboscratch.robot'
+            id = 'org.robotrun.robot'
             displayName = 'Gradle Robot plugin'
         }
     }
