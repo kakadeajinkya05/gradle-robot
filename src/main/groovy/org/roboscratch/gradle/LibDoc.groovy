@@ -53,6 +53,10 @@ class LibDoc extends DefaultTask {
         addLib('String')
         addLib('Telnet')
         addLib('XML')
+        addLib('Requests')
+        addLib('Logging')
+        addLib('Robot')
+        addLib('RequestsLibrary')
     }
 
     def addAllJavaLibsFromClasspath() {
